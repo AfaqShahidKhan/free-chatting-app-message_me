@@ -15,7 +15,9 @@
           <div class="menu">
 
             <% if logged_in? %>
-                <%= link_to "Log out", logout_path, method: :delete, class: "item" %>
+                <%= button_to "Log out", logout_path, method: :delete, class: "ui button item", style: "color: black; background-color: white;" %>
+
+
               <% else %>
 
                 <%= link_to "Log in", login_path, class: "item" %>

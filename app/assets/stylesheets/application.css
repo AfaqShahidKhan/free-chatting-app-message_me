@@ -18,3 +18,15 @@
  .chatbox{
     height: 450px;
  }
+
+ .custom-logout-button {
+   background-color: #ff5733; /* Custom background color */
+   color: #161515; /* Text color */
+   border: 2px solid #ff5733; /* Border color */
+   /* Add any other styles you need */
+ }
+ .black-text-button {
+   color: black;
+   background-color: white;
+ }
+ 
