@@ -16,6 +16,8 @@
   <body>
     <%= render 'shared/header' %>
     <div class="ui container">
+    <%= render 'layouts/messages' %>
+
       <%= yield %>
     </div>
 
@@ -24,6 +26,9 @@
 
     <script>
     $(".ui.dropdown").dropdown();
+    $('.message .close').on('click', function() {
+    $(this).closest('.message').transition('fade');
+    });
     </script>
   </body>
 </html>
