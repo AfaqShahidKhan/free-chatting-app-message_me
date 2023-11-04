@@ -1,11 +1,9 @@
-module ApplicationCable
-  class ChatroomChannel < ActionCable::Channel::Base
+class ChatroomChannel < ApplicationCable::Channel
+  def subscribed
+    stream_from "chatroom_channel"
+  end
 
-    def subscribed
-
-      stream_from "chatroom_channel"
-    end
-
-
+  def unsubscribed
+    # Any cleanup needed when channel is unsubscribed
   end
 end

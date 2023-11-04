@@ -29,4 +29,11 @@
    color: black;
    background-color: white;
  }
+
+ /* id section */
+
+ #messages-overflow{
+  height: 15em;
+  overflow: auto;
+ }
  

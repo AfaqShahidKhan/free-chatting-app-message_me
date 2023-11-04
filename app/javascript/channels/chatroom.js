@@ -11,11 +11,16 @@ App.chatroom = App.cable.subscriptions.create("ChatroomChannel", {
     console.log("Bye from rails");
   },
 
+  // received: function (data) {
+  //   // Called when the server broadcasts a message to this channel
+  //   // You can handle the received data here, e.g., append the message to the chatroom UI
+  //   console.log(data);
+  //   console.log("Received data:", data);
+  //   $("#message-container").append(data.mod_message);
+  // },
   received: function (data) {
-    // Called when the server broadcasts a message to this channel
-    // You can handle the received data here, e.g., append the message to the chatroom UI
-    console.log(data);
     console.log("Received data:", data);
+    // Append the message to the chat interface
     $("#message-container").append(data.mod_message);
   },
 });
