@@ -1,5 +1,5 @@
 # README
-
+Hi this is afaqshahidkhan and i made a new app named as message me in ruby on rails 7
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
